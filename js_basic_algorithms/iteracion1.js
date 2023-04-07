@@ -2,6 +2,7 @@
 
 // Iteración #1.1 (1.1 Crea una variable llamada myFavoriteHero, asigna el valor Hulk a ella.)
 
+// Variable = Nombre de la vriable = "valor asignado"
 const myFavoriteHero = "Hulk";
 
 // Iteración #1.2 1.2 (Crea una variable llamada x, asigna el valor 50 a ella.)
