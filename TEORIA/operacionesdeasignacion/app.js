@@ -31,6 +31,7 @@ let e = 3;
 
 d += e; // d = d + e
 
+
 // Asignar el resultado de una operación a una variable utilizando una "EXPRESIÓN" como operando
 
 let f = 5
