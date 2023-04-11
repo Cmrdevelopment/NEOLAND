@@ -32,7 +32,25 @@ const findLongestWord2 = (array) => {
     return palabraMasLarga
 }
 
+// Ejercicio resuelto con el for
+
 console.log(findLongestWord2(avengerss))
 
 // ? si se cumple la condición de que la logitud de heroe > que la longitud que
 // palabraMásLarga entonces palabraMásLarga = heroe : (sino) palabraMásLarga = palabraMásLarga   
+
+
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+
+function findLongestWord(param) {
+    let numeroMasLargo = "";
+    for (i = 0; i < avengers.length; i++) {
+
+        if (avengers[i].length > numeroMasLargo.length) {
+            numeroMasLargo = avengers[i];
+        }
+    }
+    return (numeroMasLargo);
+}
+
+console.log(findLongestWord(avengers))
