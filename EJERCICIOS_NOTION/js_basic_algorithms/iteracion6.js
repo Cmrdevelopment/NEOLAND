@@ -1,6 +1,6 @@
 // Iteración #6: Bucles
 
-// 1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
+// 1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola. (con ayuda de compañeros)
 
 const automatico = []
 
@@ -10,7 +10,7 @@ for (i = 0; i <= 9; i++) {
 console.log(automatico)
 
 
-//1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo cuando el resto del numero dividido entre 2 sea 0.
+//1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo cuando el resto del numero dividido entre 2 sea 0. (sin ayuda de compañeros)
 
 const dividido = []
 
@@ -34,4 +34,8 @@ for (i = 0; i <= 9; i++) {
 // 8/2=	4   ==> Da > o => no debe monstrarse
 // 9/2=	4.5 ==> Da > o => no debe monstrarse
 
-// 1.3 Crea un bucle para conseguir dormir contando ovejas. Este bucle tiene que dar 10 vueltas, es decir, 10 console.log. Muestra por consola un mensaje diciendo 'Intentando dormir 🐑' en cada vuelta del bucle y cambia el mensaje en la décima vuelta a 'Dormido!'.
+// 1.3 Crea un bucle para conseguir dormir contando ovejas. Este bucle tiene que dar 10 vueltas, es decir, 10 console.log. Muestra por consola un mensaje diciendo 'Intentando dormir 🐑' en cada vuelta del bucle y cambia el mensaje en la décima vuelta a 'Dormido!'. (sin ayuda de compañeros)
+
+for (i = 0; i <= 10; i++) {
+    (i < 10) ? console.log("intentanto dormir 🐑", (i)) : console.log("Dormido")
+}

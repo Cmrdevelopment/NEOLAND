@@ -1,4 +1,4 @@
-// Iteración #4: Arrays
+// Iteración #4: Arrays (Lo hice con AYUDA de compañeros)
 
 
 // 1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
