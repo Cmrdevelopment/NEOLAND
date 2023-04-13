@@ -1,4 +1,4 @@
-// Iteración #2: Buscar la palabra más larga
+// Iteración #2: Buscar la palabra más larga (Lo hice con AYUDA de compañeros)
 
 // Completa la función que tomando un array de strings como argumento devuelva el más largo, 
 // en caso de que dos strings tenga la misma longitud deberá devolver el primero.
