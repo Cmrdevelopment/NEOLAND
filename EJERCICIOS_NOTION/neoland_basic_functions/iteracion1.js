@@ -34,3 +34,12 @@ function sumar(number1, number2) {
 }
 
 console.log(sumar(100, 200))
+
+
+// Práctica 4
+
+function sumita(nume1, nume2) {
+    nume1 > nume2 ? console.log(nume1) : console.log(nume2)
+}
+
+console.log(sumita(200, 700))
