@@ -75,9 +75,6 @@ console.log(findLongestWord(avengers))
 // console.log(findLongestWord(avengers))
 
 
-
-
-
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
 
 function findLongestWord(param) {
