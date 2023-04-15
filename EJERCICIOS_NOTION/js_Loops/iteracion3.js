@@ -10,7 +10,7 @@ const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 
 /////  console.log(loquemedelagana);    
 // } 
 // ==> lo que hace el for of es poner un nombre cualquiera, después el of y después el nombre de la variable a tener en cuenta
-// el cosole.log(nombre de la variable a tener en cuenta) te da la lista del array
+// el console.log(nombre de la variable a tener en cuenta) te da la lista del array
 
 
 for (recorrer of placesToTravel) {
