@@ -31,11 +31,3 @@ function finderName(array, nombre) {
 }
 finderName(nameFinder, "Peter")
 
-
-
-
-
-
-// if (acc++ == array.length) {
-//     console.log("false");
-// }
