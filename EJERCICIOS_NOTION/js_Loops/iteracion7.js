@@ -12,7 +12,7 @@ const toys = [
     { id: 40, name: 'El gato felix', sellCount: 35 }
 ]
 
-for (const valor of toys) {
+for (let valor of toys) {
     if (valor.sellCount > 15) {
         popularToys.push(valor)
     }
