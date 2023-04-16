@@ -1,3 +1,9 @@
+// atajos del teclado
+
+// PARA SACAR EMOJIS: Window +
+// PARA COMENTAR VARIAS LINEAS: Control + k + c
+// PARA DESCOMENTAR VARIAS LINEAS: Control + k + u
+
 // como utilizar typeof (para saber que tipo de dato es la variable)
 
 let name = "hola"

@@ -6,6 +6,12 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+////////////// LO NORMAL es que la utlización de los bucles se utilizan así:
+
+// FOR normal para meter mano en todo el funcionamiento del bucle
+// FOR OF y FOR EACH para arrys
+// FOR IN para objetos
+// WHILE es para bucles infinitos
 
 // Bucles, una herramienta para recorrer elementos recorribles (iterar elementos iterables)
 // Elementos recorribles
@@ -30,10 +36,10 @@
 // for (let index = 0; index < array.length; index++) { ===> i = 0 es para empezar el eje del bucle, i < array.length hasta cuando quiero que haga el bucle, i++ que le pasa al bucle 
 //     const element = array[index];  ==> 
 
-for (let i = 0; i < 10; i++) {
-    console.log("Hola", i)
+// for (let i = 0; i < 10; i++) {
+//     console.log("Hola", i)
 
-}
+// }
 
 // sale esto:
 // Longitud y posición
@@ -55,7 +61,20 @@ for (let i = 0; i < 10; i++) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // ¿Que hace? Hace automaticamente lo del FOR pero con menos código, sin length
-// No se puede sacar el indice
+// No se puede sacar el indice, saca los valores
+// Hace todo lo del for pero con menos codigo: "PASA DE ESTO" 
+
+//const alimentos = ["Tomate", "Lechuga", "Pan", "Galletas", "Agua"]
+// for (let i = 0; i < alimentos.length; i++) {
+//     const alimento = alimentos[i]
+//     console.log(alimento)
+// }
+
+// "A ESTO"
+// for (let alimento of alimentos) {
+//     console.log(alimento)
+// }
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////// FOR EACH ///////////////////////////////////////////////////////////////
@@ -63,8 +82,12 @@ for (let i = 0; i < 10; i++) {
 
 // Para array
 // ¿Que hace? Hace automaticamente lo del FOR pero con menos código, sin length
-// Si se puede sacar el indice
+// "SI SE PUEDE SACAR EL INDICE", es decir, la posición de cada uno de los array, en este caso, tomate[0], lechuga[1], etc
+// Igual que el for of pero cambia la sintaxis
 
+// alimentos.forEach((alimento, i) => {
+//     console.log(alimento, i)
+// })
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////// FOR IN ///////////////////////////////////////////////////////////////
@@ -72,20 +95,45 @@ for (let i = 0; i < 10; i++) {
 
 // // Es para objetos de llaves
 // ¿Que hace? Hace automaticamente lo del FOR pero con menos código, sin length
-// Saca las claves
+// Saca las claves, si probamos hacer un FOR IN en un array lo que saca es el 1, 2, 3 porque saca las claves, por eso no me sirve recorrer un array con FOR IN (recuerda que las claves son los atributos (name:, age:, city:, etc) y NO sacará Carlos, 52 y LPGC)
+// Si lo ponemos así:
+// const character = {
+//     name: "Paco",
+//     age: 87,
+//     city: "Madrid",
+//   }
+  
+//   for (let key in character) {
+//     console.log("La clave " + key + " tiene como valor " + character[key])
+//   }
+
+// La clave name tiene como valor Paco
+// La clave age tiene como valor 87
+// La clave city tiene como valor Madrid
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////// WHILE  ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Cuidado que puedes hacer un bucle infinito
+// Ejmplo: tengo una varia llamada num que es = a cero
+// let num = 0;
+// // Mientras num sea < que 5
+// while(num < 5) {
+//     num++ // me vas a sumar 1 a num
+//     console.log(num) // y me lo vas a sacar por consola
+// } //
+
+
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////// HOISTING  ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Muchos desarrolladores llaman a la funcón antes y no deberia ser así, JS puede recolocar las funciones pero las constantes no ==>
-// Es decir, ponen el console.log arriba y las funciones abajo y funcionan pero hoy en día en ES6 casi tood se ahace con =>
+// Muchos desarrolladores llaman a la función antes y no deberia ser así, JS puede recolocar las funciones pero las constantes no ==>
+// Es decir, ponen el console.log arriba y las funciones abajo y funcionan pero hoy en día en ES6 casi todo se hace con =>
 // y ahí si hay que tener en cuenta que el JS funciona en cascada
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,32 +162,155 @@ for (let i = 0; i < 10; i++) {
 
 // METODOS
 
-// Map
+// MAP: Puedo hacer cosas de un bucle normal, puedo devolver un array de objetos con todo modificado, puedo crear un array nuevo solo con las propiedades(atributos) que yo quiera y además puedo hacer un nuevo array de objetos utilizando propiedades (atributos) originales cambiandole la clave y encima metiendole cosas nuevas
 
-    // Devuelve un nuevo array
+// IMPORTATNE: EL MAP tambien nos sirve para quedarte con la información que venga de una base de datos de una forma ordenada y cambiar las claves, por ejemplo para cambiar una propiedad (atributo) que no se entienda bien por otra, por ejemplo viene como img Dr27 pues lo podemos cambiar por Foto.
 
-        // windows + . y pones imojis (los imojois imputan como string)
-    //
+// Con el MAP puedo sacar un array de solo los datos que me interese porque puedo tener un array de objetos inmenso y soloquerer 5 porpiedades
 
-// Filter
+// Devuelve un nuevo array
 
-    // Es como un Buscador para encontrar TODOS
+// windows + . y pones imojis (los imojois imputan como string)
 
-// Find
+/////////////// Cambiar todos los humanos en zombies
 
-    // Encontrar el objeto o el elemnto y te lo devuelve, es la priemra concidencia. Para encontrar SOLO 1.º, ejemplo un ID ó un DNI.
+// const humans = ["😀", "😀", "😀", "😀", "😀", "😀"]
+// const zombis = humans.map((human) => "🧟‍♀️")
+// console.log(zombis)
 
-// Every
+// const humans = ["😀", "😀", "😀", "😀", "😀", "😀"]
+// const zombis = humans.map((lo_que_quieras_poner_aqui_lo_pones) => "🧟‍♀️")
+// console.log(zombis)
 
-    // Devuelve un true o un false, es decir, un Boleano (si todos cumples la condición) => Para detectar si todos cumple la condición
+// OTRO EJEMPLO DE MAP
 
-// Some
+// const movies = [
+//     {
+//       title: "The Batman",
+//       year: 2022,
+//     },
+//     {
+//       title: "Dune",
+//       year: 2021,
+//     },
+//     {
+//       title: "Gremlins",
+//       year: 1985,
+//     },
+//   ]
 
-    // si uno cumple la condicion => Para detectar si uno es un kiwi de un array lleno de frutas.
+// Variable movieTitles es igual a movies.map y por cada una de las movies individuales te quedas con el movie.movieTitles
+// const movieTitles = movies.map((movie) => movie.title)
+// console.log(movieTitles) 
+// Devuelve un array nuevo con los nombres de las peliculas nada más
+// [ 'The Batman', 'Dune', 'Gremlins' ]
 
-//  Reduce
+// PUEDO HACER UN NUEVO ARRAY DE OBJETOS de esta MANERA, cambiandole las claves y añadiedole cosas (clases) nuevas
 
-    // Se llama reduce porque concentra el contador en un número
-    // const average = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// const newMovies = movies.map((movie) => ({
+//     titulo: movie.title,
+//     año: movie.year,
+//     released: true,
+// }))
+
+// console.log(newMovies);
 
 
+/////////////////////////////////////////////////////////////// FILTER ///////////////////////
+
+// Filter: Es como un Buscador para encontrar TODOS, te devuelve un ARRAY con los elementos que cumplan la condición
+
+// const characters = [
+//   {
+//     name: "Frodo",
+//     species: "Hobbit",
+//     age: 24,
+//   },
+//   {
+//     name: "Legolas",
+//     species: "Elve",
+//     age: 160,
+//   },
+//   {
+//     name: "Sam",
+//     species: "Hobbit",
+//     age: 25,
+//   },
+// ]
+
+// const hobbits = characters.filter((character) => character.species === "Hobbit")
+// console.log(hobbits)
+
+// const colors = ["red", "blue", "green", "yellow", "black", "white"]
+// const onlyL = colors.filter((colorL) => colorL.includes("l"))
+// console.log(onlyL);
+
+// si queremos que salgan a mayusculas o minusculas debemos igualarlas con el método toLowerCase / toUpperCase
+
+// Si queremos que sagan todos, los que hemos puesto en minuscula y en mayuscula debemos poner toLowerCase() y toUpperCase(), si no solo pondra´los que esten en mayuscula o en minuscula.
+
+// const colors2 = ["red", "blue", "green", "yeLLow", "black", "white"]
+// const onlyLl = colors2.filter((colorLl) => colorLl.toLowerCase().toUpperCase().includes("l"))
+// console.log(onlyLl);
+
+// Que salgan los character < 50 años
+
+// const youngCharacters = characters.filter((character) => character.age < 50)
+// console.log(youngCharacters)
+
+/////////////////////////////////////////////////////////////// FIND ///////////////////////
+
+// Find: Encontrar el objeto o el elemento y te lo devuelve, es SOLO la priemra concidencia y te devuelve UN ELEMENTO. Para encontrar SOLO la 1º, ejemplo un ID ó un DNI. 
+
+// const characters = [
+//   {
+//     name: "Frodo",
+//     species: "Hobbit",
+//     age: 24,
+//   },
+//   {
+//     name: "Legolas",
+//     species: "Elve",
+//     age: 160,
+//   },
+//   {
+//     name: "Sam",
+//     species: "Hobbit",
+//     age: 25,
+//   },
+// ]
+
+// // Sam es igual a character.find y por cada uno de los character te quedas con el que character.name esa igual a Sam
+
+// const sam = characters.find((character) => character.name === "Sam")
+// console.log(sam);
+
+/////////////////////////////////////////////////////////////// EVERY ///////////////////////
+
+// Every: Devuelve un true o un false, es decir, un Boleano (si todos cumples la condición) => Para detectar si todos cumple la condición. 
+
+const vegan = ["🥝", "🥝", "🥝", "🥝", "🍔", "🥝"]
+const isVegan = vegan.every((item) => item === "🥝")
+
+console.log(isVegan); // al no ser todos 🥝 devuelve false
+
+/////////////////////////////////////////////////////////////// SOME ////////////////////////
+
+// Some: si uno cumple la condicion => Para detectar si uno es un kiwi de un array lleno de frutas. 
+
+const someIsVegan = vegan.some((item) => item === "🥝")
+console.log(someIsVegan)
+
+
+
+/////////////////////////////////////////////////////////////// REDUCE ////////////////////////
+
+// Reduce: Se llama reduce porque concentra el contador en un número 
+
+// const average = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0); El cero es de donde parte el acumulador, normalmente es cero pero puede ser > 0 si e spor un ticket de descuento ó por puntos que te dan en un campo de golf, etc
+
+const nums = [20, 23, 45, 68, 76, 2000, 6]
+const total = nums.reduce((acumulador, num) => acumulador + num, 0)
+console.log(total) /// 2238
+
+Every:

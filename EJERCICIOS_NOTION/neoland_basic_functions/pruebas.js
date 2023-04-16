@@ -1,34 +1,43 @@
-let family = [
-    {
-        type: "padre",
-        name: "Miguel",
-        adress: [28029, "Madrid"],
-    },
-    {
-        type: "madre",
-        name: "Lucia",
-        adress: ["Madrid"],
-    },
-    {
-        type: "hijo",
-        name: "Luis",
-        adress: ["LPGC"],
-    },
-];
+// const persona = {
+//     nombre: 'Juan',
+//     edad: 30,
+//     direccion: {
+//         ciudad: 'Bogotá',
+//         pais: 'Colombia'
+//     }
+// };
 
-// console.log(family[0].adress);
-// console.log(family[1].adress);
-// console.log(family[2].type);
-// console.log(family[2].adress);
-//console.log(family[0].adress[1]);
+// const { nombre, edad, direccion: { ciudad, pais } } = persona;
+// console.log(nombre);
+// console.log(edad);
+// console.log(ciudad, "y", pais);  
 
-// for (let i = 0; i < family.length; i++) {
-//     console.log(family[1].adress);
 
+
+
+const alimentos = ["Tomate", "Lechuga", "Pan", "Galletas", "Agua"]
+// for (let i = 0; i < alimentos.length; i++) {
+//     const alimento = alimentos[i]
+//     console.log(alimento)
 // }
 
-for (i = 0; i < family.length; i++) {
-    for (x = 0; x < family[i].adress.length; x++) {
-        family[i].adress[x] == 28029 && console.log(`El ${family[i].type} que se llama ${family[i].name} vive en el ${family[i].adress[i]} de ${family[i].adress[i + 1]} `)
-    }
-}
+
+// for (let alimento of alimentos) {
+//     console.log(alimento)
+// }
+
+// alimentos.forEach((alimento) => {
+//     console.log(alimento)
+// })
+
+
+const movies = ["Batman", "Dune", "Titanic", "Babylon"]
+
+//FOREACH
+movies.forEach((movie, i) => console.log(movie, i))
+
+alimentos.forEach((alimento, i) => {
+    console.log(alimento, i);
+})
+
+
