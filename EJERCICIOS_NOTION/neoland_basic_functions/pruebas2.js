@@ -1,12 +1,8 @@
-const vegan = ["🥝", "🥝", "🥝", "🥝", "🍔", "🥝"]
-const isVegan = vegan.every((item) => item === "🥝")
-
-console.log(isVegan); // al no ser todos 🥝 devuelve false
 
 
 
-const someIsVegan = vegan.some((item) => item === "🥝")
-console.log(someIsVegan)
 
-
-
+const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
+const arrayAux3 = [...colors];
+arrayAux3.splice(1, 1);
+console.log(arrayAux3);

@@ -15,7 +15,12 @@ const counterWords = [
     'upgrade',
     'code'
 ];
-function repeatCounter(param) {
-    let acc = 0
 
-}
+// function repeatCounter(param) {
+//     let acc = 0
+
+// }
+counterWords.forEach((valor)=>{
+const reprepeatCounter = counterWords.filter((character) => character == counterWords[character])
+console.log(reprepeatCounter);
+})

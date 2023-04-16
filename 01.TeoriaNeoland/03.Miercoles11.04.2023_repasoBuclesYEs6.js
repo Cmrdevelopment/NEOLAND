@@ -102,7 +102,7 @@
 //     age: 87,
 //     city: "Madrid",
 //   }
-  
+
 //   for (let key in character) {
 //     console.log("La clave " + key + " tiene como valor " + character[key])
 //   }
@@ -181,6 +181,7 @@
 // const humans = ["😀", "😀", "😀", "😀", "😀", "😀"]
 // const zombis = humans.map((lo_que_quieras_poner_aqui_lo_pones) => "🧟‍♀️")
 // console.log(zombis)
+
 
 // OTRO EJEMPLO DE MAP
 
@@ -313,4 +314,4 @@ const nums = [20, 23, 45, 68, 76, 2000, 6]
 const total = nums.reduce((acumulador, num) => acumulador + num, 0)
 console.log(total) /// 2238
 
-Every:
+// Every:
