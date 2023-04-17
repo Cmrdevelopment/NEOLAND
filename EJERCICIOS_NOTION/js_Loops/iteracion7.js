@@ -23,5 +23,5 @@ console.log(popularToys);
 // 1.- Recorrer todos los jueguetes con un bucle **for...of**
 // 2.- Añade los que tengan más de 15 ventas (sellCount)
 
-// ==> lo que hace el for of es poner un nombre cualquiera, después el of y después el nombre de la variable a tener en cuenta
+// ==> lo que hace el "FOR OF" es poner un nombre cualquiera (valor), después el of y después el nombre de la variable a tener en cuenta
 // el console.log(nombre de la variable a tener en cuenta) te da la lista del array

@@ -1,8 +1,7 @@
 
 
+const comidas = ["macarrones ", "lentejas", "potaje", "pizza"];
+let eat = comidas.slice(1, 3)
+console.log(eat)
 
-
-const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
-const arrayAux3 = [...colors];
-arrayAux3.splice(1, 1);
-console.log(arrayAux3);
+//console.log(comidas.slice(0, 4))
