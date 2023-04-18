@@ -22,6 +22,4 @@ const nameUser2 = users.map((user) => {
 })
 
 
-const arr = [1, 2, 3, 4, 5, 50, 100];
-const average = arr.reduce((a, b) => a + b, 0) / arr.length;
-console.log(average);
+

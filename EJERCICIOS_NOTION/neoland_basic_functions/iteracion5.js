@@ -35,4 +35,6 @@ function averageWord(param) {
 }
 console.log(averageWord(mixedElements))
 
+// CAMBIAR EL PARAM de foreach
+
 
