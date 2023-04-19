@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+div, p {
+    display: inline;
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+    padding: 12px;
+}
+
+div {
+    background-color: #e74c3c;
+}
+
+p {
+    background-color: #9b59b6
+}
+
+span, a {
+    height: 60px;
+    width: 150px;
+    padding: 12px 70px 12px 20px;
+    margin: 10px;
+    
+    
+}
+
+span {
+    display: inline;
+    background-color: #3498db;
+}
+
+a {
+    background-color: #2ecc71;
+}
