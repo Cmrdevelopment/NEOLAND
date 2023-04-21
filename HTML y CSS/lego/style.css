@@ -1,0 +1,49 @@
+:root {
+    --header-color: #ffcf00;
+    --background-color: #ffffff;
+    --primary-color: #111111;
+    --tipografica-h1: 66px;
+    --tipografia-h2: 36px;
+    --tipografia-h3: 24px;
+    --tipografia-global: 16px;
+    --tipografica-heading-weight: 700;
+    --tipografica-anchor-weight: 500;
+    --tipografia-global-weignt: 300;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-size: var(--tipografia-global);
+    font-weight: var(--tipografica-heading-weight);
+}
+
+header > .main-nav {
+    background-color: var(--header-color);
+    height: 10vh;
+    padding: 0 0.5rem;
+    display: flow;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+
+header > .main-nav ul,
+header > .main-nav dev {
+    display: flex;
+} 
+
+header > .main-nav img {
+    height: 10vh;
+    padding: 0.5rem 0;
+    
+}
+

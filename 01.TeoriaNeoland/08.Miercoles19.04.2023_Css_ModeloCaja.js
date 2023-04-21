@@ -52,6 +52,7 @@
 // Responsive se hace con % no con px
 // Debemos utilizar: Unidades meidades realtiva los viewport, %, rem
 //--------------> Medias Queries => https://www.notion.so/neoland-school/Medias-Queries-b2df9884d6d84d8dbfd9b408e01c390c
+//! IMPORTANTE: Las MEDIA QUERY son para adaptar, quitar y poner cosas SOLO para el movil
 // media queris: para tener diferentes visualizaciones del contenido
 
 //? Flex https://www.notion.so/neoland-school/Flex-b8a71c7c62364dbc99ea6991c0c3a170
