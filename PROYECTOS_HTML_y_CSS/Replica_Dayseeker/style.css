@@ -86,7 +86,7 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     /* justify-content: space-around; */
-    padding: 2rem;
+    padding: 5rem;
 }
 
 .featured-items ul {
@@ -96,6 +96,7 @@ header a:hover {
     width: 100%;
     list-style-type: none;
     text-align: center;
+    padding: 5rem;
 }
 
 .featured-items ul p {
@@ -115,6 +116,24 @@ header a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.videoclip div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.videoclip button {
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size:medium;
+    text-transform: uppercase;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid;
 }
 
 
