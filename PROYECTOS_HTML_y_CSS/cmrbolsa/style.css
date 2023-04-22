@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #dadee5;
+    color: #f9fefb;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+}
+
+h1,
+h5 {
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+    color: rgb(129, 124, 124);
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+header > ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(146, 2, 248);
+    transition: color 0.5s ease-in-out;
+}
+
+a:hover 
+{
+    color: #000000;
+}
+
+article > h1, h3 {
+    padding: 0 90px;
+}
+
+.intro > {
+    text-align: justify;
+}
+
+main {
+    min-height: 80vh;
+}
+
+.boton {
+    display: flex;
+    height:36px; 
+    width:210px;
+    padding: 0px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+a[href="https://twitter.com/cmrbolsa"] {
+    width: 70px;
+}
+a[href="https://www.facebook.com/cmrbolsa"] {
+    width: 70px;
+}
