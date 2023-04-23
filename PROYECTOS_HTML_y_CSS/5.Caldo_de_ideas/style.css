@@ -1,0 +1,114 @@
+:root {
+    --background-color: #ffffff;
+    --background-secudary-color: #e2e3e4;
+    --tipografica-p: 27px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "scoolar";
+    src: url(./assets/fonts/scoolar\ tfb.ttf);
+}
+
+p {
+    font-size: var(--tipografica-p);
+    font-weight: 27px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header {
+    font-family: "scoolar";
+    height: 14vh;
+    padding: 20px 0px 0px 48px;
+    font-size: 36px;
+}
+
+.box {
+    height: 30vh;
+    width: 100vh;
+    background-color: rgba(121, 121, 121, 0);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: var(--background-secudary-color);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.hero img {
+    height: 27rem;
+    padding: 0 0 0 100px;
+    
+}
+
+body {
+    font-family: "Caveat", sans-serif;
+}
+
+.gran_menu ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 3rem;
+    
+}
+
+.youtube {
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    height: 50vh;
+    display: grid;
+    text-align: center;
+    margin-top: 7vh;
+    font-size: 30px;
+}
+
+.redes ul {
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+}
+
+.redes img {
+    height: 25vh;
+}
+
+
+
+/* .gran_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.gran_menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    list-style-type: none;
+} */
+
