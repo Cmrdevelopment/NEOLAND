@@ -1,0 +1,142 @@
+:root {
+    --background-color: #F2EFEC ; /*Fondo gris generico */
+    --background-primario-color: #9999FF;
+    --background-secudary-color: #9999FF;
+    --texto-color-negro: #292929; /*Texto Negro */
+    --texto-color-blanco: #ffffff; /*Texto blanco */
+    --texto-color-gris: #4a4a4a; /*Texto gris */
+    --tipografia-h1: 39px;
+    --tipografia-h2: 36px;
+    --tipografia-h3: 23px;
+    --tipografia-h4: 21px;
+    --tipografia-p-a: 17px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    /* background-color: var(--background-color); */
+    color: var(--texto-color-gris);
+}
+
+h1 {
+    font-size: var(--tipografia-h1);
+    color: var(--texto-color-blanco);
+}
+
+h2 {
+    font-size: var(--tipografia-h2);
+}
+
+h3 {
+    font-size: var(--tipografia-h3);
+}
+
+h4 {
+    font-size: var(--tipografia-h4);
+}
+
+p {
+    font-size: var(--tipografia-a);
+}
+
+a {
+    font-size: var(--tipografia-p-a);
+    text-transform: uppercase;
+    
+}
+
+header {
+    height: 12vh;
+    background-color: var(--background-primario-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    display: flex;
+    height: 4.5rem;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--texto-color-blanco);
+}
+
+span {
+    color:#81D742
+}
+
+.cabecera {
+    height: 57vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    background-color: hsl(240 95% 75%);
+    color: #F2EFEC;
+    overflow: hidden;
+}
+.cabecera div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 7rem;
+}
+
+div h1, h3, button {
+    margin-top: 1.8rem;
+}
+
+.cabecera img {
+    height: 36rem;
+}
+
+.cabecera button {
+    background-color: #08accc;
+    color: var(--texto-color-negro);
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.7rem 1.2rem;
+    border: px solid var(--primary-color);
+    font-size: var(--tipografia-h4);
+    letter-spacing: 0.1rem
+}
+
+article {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+article h2, p, blockquote {
+    display: flex;
+    margin-top: 1.8rem;
+}
+article p, blockquote{
+    font-size: var(--tipografia-h4);
+    padding: 0rem 7rem;
+}
+
+blockquote {
+    font-weight: bold;
+    padding: 0rem 12rem;
+    line-height:36px;
+}
+
+
+
