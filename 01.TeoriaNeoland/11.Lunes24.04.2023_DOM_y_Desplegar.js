@@ -27,6 +27,11 @@
 // Devuelve el primer elemento del documento que cumpla la selección (la notación es como en CSS)
 // document.querySelector('.someclass'); => Es para recuperar uno
 
+const title = document.querySelector("#title")
+
+const paragraphsClass = document.querySelectorAll(".paragraph")
+console.log(paragraphsClass)
+
 //! MIRAR REPOSITORIO DE CLASES
 
 // Devuelve una lista de elementos que cumplen con la selección (notación como en CSS)
@@ -43,21 +48,49 @@
 
 //----------> let padre = elem.parentNode; => para recuperar el padre
 
+
+
 //? ------------------------------> Crear nuevos elementos
 
-// Puedo meter desde JS los elementos que quiera en html
+// Puedo meter desde JS los elementos que quiera en html. document.body (aqui estan todos)
 
-// document.body (aqui estan todos)
+document.body.innerHTML = template
 
-// document.body.
+// innerHTML => CREAR NUEVO ELEMENTOS CON TEMPLATES
+
+const nuevoTitulo = document.createElement("h1")
+nuevoTitulo.innerText = "Soy el titulo"
+document.body.appendChild(nuevoTitulo)
 
 //? ------------------------------> Manipular clases
 
 //----------> Como funciona en cascada puedo seguir haciendolo cosas
 
-
+nuevoTitulo.classList.add ("estilo") // añadir
+nuevoTitulo.classList.remove ("estilo") // eliminar
+nuevoTitulo.classList.toggle("estilo") // intercambiarlo (añadir/eliminar)
 
 //? ------------------------------> DOM templates
+
+// Ejemplo de template
+
+const fullname = "Carlos Martín"
+
+const template = `
+
+<header>
+
+    <h1>${fullname}</h1>
+    <ul>
+        <li>Primero</li>
+        <li>Segundo</li>
+    </ul>
+</header>
+`
+
+document.body.innerHTML = template
+
+// innerHTML => CREAR NUEVO ELEMENTOS CON TEMPLATES
 
 
 
@@ -78,3 +111,12 @@
 
 // La manera de añadir eventos es con logica, es decir, en JS (en app)
 
+// Extensiones html en js
+
+//? ------------------------------> DESPLEGAR
+
+// git
+// Vercel.com - Registrarse
+// --->> configurar cuenta de git
+// --->> Configurar proyecto
+// 
