@@ -1,16 +1,30 @@
 
-const fullname = "Carlos Martín"
+const button = document.querySelector("#myBtn")
 
-const template = `
+const insertarTitulo = () => {
+    const titulo = document.createElement("h1")
+    titulo.innerText = "Vamos a por el Titulo"
+    document.body.appendChild(titulo)
+}
 
-<header>
+button.addEventListener("click", () => {
+    insertarTitulo()
+})
 
-    <h1>${fullname}</h1>
-    <ul>
-        <li>Primero</li>
-        <li>Segundo</li>
-    </ul>
-</header>
-`
+const input = document.querySelector("#myInput")
 
-document.body.innerHTML = template
+input.addEventListener("input", (ev) => {
+    const h2 =document.querySelector("#resultado")
+    console.log(ev);
+    h2.innerText = ev.target.value
+})
+
+
+
+
+
+
+
+
+
+
