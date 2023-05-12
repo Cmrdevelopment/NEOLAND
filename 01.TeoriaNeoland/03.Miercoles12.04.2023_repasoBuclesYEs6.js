@@ -2,11 +2,11 @@
 // Bucles ==> repaso (for, for of, forEach, for in, WHILE,  )
 // HOISTING y CLOUSURES
 // ES 6 (TEMPLETE STRING, DESTRUCTURING, SPREAD OPERATOR)
-///// METODOS (Map, Filter, Find, Every, Some, Reduce)
+//-------> METODOS (Map, Filter, Find, Every, Some, Reduce)
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////// LO NORMAL es que la utlización de los bucles se utilizan así:
+
+//! LO NORMAL es que la utlización de los bucles se utilizan así:
 
 // FOR normal para meter mano en todo el funcionamiento del bucle
 // FOR OF y FOR EACH para arrys
@@ -18,7 +18,7 @@
 // Objetos y array
 // A veces un String y puedes recorrer letra por letra y te saca letra por letra
 
-// Para que sirve? PARA REALIZAR TAREAS reiradas > REITERAR TAREAS UNA Y OTRA VEZ
+// Para que sirve? PARA REALIZAR TAREAS reiradas > REITERAR TAREAS UNA Y OTRA VEZ (iterar elementos iterables)
 
 // Sintaxis básica for
 
@@ -29,9 +29,9 @@
 
 // Es super personalizable, que vaya hacia delante, detrás y casi todo loque quieras
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// FOR ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> FOR 
+
 
 // for (let index = 0; index < array.length; index++) { ===> i = 0 es para empezar el eje del bucle, i < array.length hasta cuando quiero que haga el bucle, i++ que le pasa al bucle 
 //     const element = array[index];  ==> 
@@ -56,9 +56,9 @@
 
 // Explicación de como es el bucle en repaso bucles de clase del día de hoy y se hizo ejemplos
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// FOR OF ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> FOR OF 
+
 
 // ¿Que hace? Hace automaticamente lo del FOR pero con menos código, sin length
 // No se puede sacar el indice, saca los valores
@@ -76,9 +76,9 @@
 // }
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// FOR EACH ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> FOR EACH 
+
 
 // Para array
 // ¿Que hace? Hace automaticamente lo del FOR pero con menos código, sin length
@@ -89,11 +89,11 @@
 //     console.log(alimento, i)
 // })
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// FOR IN ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// // Es para objetos de llaves
+//? -----------------------------------------------> FOR IN 
+
+
+//! Es para objetos de llaves
 // ¿Que hace? Hace automaticamente lo del FOR pero con menos código, sin length
 // Saca las claves, si probamos hacer un FOR IN en un array lo que saca es el 1, 2, 3 porque saca las claves, por eso no me sirve recorrer un array con FOR IN (recuerda que las claves son los atributos (name:, age:, city:, etc) y NO sacará Carlos, 52 y LPGC)
 // Si lo ponemos así:
@@ -112,9 +112,9 @@
 // La clave city tiene como valor Madrid
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// WHILE  ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> WHILE  
+
 
 // Cuidado que puedes hacer un bucle infinito
 // Ejmplo: tengo una varia llamada num que es = a cero
@@ -128,24 +128,24 @@
 
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// HOISTING  ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> HOISTING  
+
 
 // Muchos desarrolladores llaman a la función antes y no deberia ser así, JS puede recolocar las funciones pero las constantes no ==>
 // Es decir, ponen el console.log arriba y las funciones abajo y funcionan pero hoy en día en ES6 casi todo se hace con =>
 // y ahí si hay que tener en cuenta que el JS funciona en cascada
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// CLOUSURES  ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> CLOUSURES  
+
 
 // Es una funcion dentro de otra donde la segunda función puede leer dentro y fuera la informaión de la primera
     // Es el acto de devolver lo principal a lo secundario, porque se ha creado en lo principal
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////// ES 6  ///////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//? -----------------------------------------------> ES 6  
+
 
 // Nuevos metodos de JS para que todo sea más agil y más rápido, sintaxis moderna
 
@@ -164,7 +164,7 @@
 
 // MAP: Puedo hacer cosas de un bucle normal, puedo devolver un array de objetos con todo modificado, puedo crear un array nuevo solo con las propiedades(atributos) que yo quiera y además puedo hacer un nuevo array de objetos utilizando propiedades (atributos) originales cambiandole la clave y encima metiendole cosas nuevas
 
-// IMPORTATNE: EL MAP tambien nos sirve para quedarte con la información que venga de una base de datos de una forma ordenada y cambiar las claves, por ejemplo para cambiar una propiedad (atributo) que no se entienda bien por otra, por ejemplo viene como img Dr27 pues lo podemos cambiar por Foto.
+// IMPORTANTE: EL MAP tambien nos sirve para quedarte con la información que venga de una base de datos de una forma ordenada y cambiar las claves, por ejemplo para cambiar una propiedad (atributo) que no se entienda bien por otra, por ejemplo viene como img Dr27 pues lo podemos cambiar por Foto.
 
 // Con el MAP puedo sacar un array de solo los datos que me interese porque puedo tener un array de objetos inmenso y soloquerer 5 porpiedades
 
@@ -172,7 +172,7 @@
 
 // windows + . y pones imojis (los imojois imputan como string)
 
-/////////////// Cambiar todos los humanos en zombies
+//? Cambiar todos los humanos en zombies
 
 // const humans = ["😀", "😀", "😀", "😀", "😀", "😀"]
 // const zombis = humans.map((human) => "🧟‍♀️")
@@ -217,10 +217,10 @@
 // console.log(newMovies);
 
 
-/////////////////////////////////////////////////////////////// FILTER ///////////////////////
+//? -----------------------------------------------> FILTER 
 
 // Filter: Es como un Buscador para encontrar TODOS, te devuelve un ARRAY con los elementos que cumplan la condición
-
+//! Encuentra todos los elementos que coinciden, todos los juanes, etc
 // const characters = [
 //   {
 //     name: "Frodo",
@@ -259,10 +259,10 @@
 // const youngCharacters = characters.filter((character) => character.age < 50)
 // console.log(youngCharacters)
 
-/////////////////////////////////////////////////////////////// FIND ///////////////////////
+//? -----------------------------------------------> FIND 
 
 // Find: Encontrar el objeto o el elemento y te lo devuelve, es SOLO la priemra concidencia y te devuelve UN ELEMENTO. Para encontrar SOLO la 1º, ejemplo un ID ó un DNI. 
-
+//! Encuentra un elemento concreto y siempre la primera coincidencia. PAra encontrar id, un dni, etc, algo concreto
 // const characters = [
 //   {
 //     name: "Frodo",
@@ -281,12 +281,12 @@
 //   },
 // ]
 
-// // Sam es igual a character.find y por cada uno de los character te quedas con el que character.name esa igual a Sam
+//! Sam es igual a character.find y por cada uno de los character te quedas con el que character.name esa igual a Sam
 
 // const sam = characters.find((character) => character.name === "Sam")
 // console.log(sam);
 
-/////////////////////////////////////////////////////////////// EVERY ///////////////////////
+//? -----------------------------------------------> EVERY 
 
 // Every: Devuelve un true o un false, es decir, un Boleano (si todos cumples la condición) => Para detectar si todos cumple la condición. 
 
@@ -295,7 +295,7 @@ const isVegan = vegan.every((item) => item === "🥝")
 
 console.log(isVegan); // al no ser todos 🥝 devuelve false
 
-/////////////////////////////////////////////////////////////// SOME ////////////////////////
+//? -----------------------------------------------> SOME 
 
 // Some: si uno cumple la condicion => Para detectar si uno es un kiwi de un array lleno de frutas. 
 
@@ -304,11 +304,11 @@ console.log(someIsVegan)
 
 
 
-/////////////////////////////////////////////////////////////// REDUCE ////////////////////////
+//? -----------------------------------------------> REDUCE 
 
-// Reduce: Se llama reduce porque concentra el contador en un número 
+// Reduce: Se llama reduce porque concentra el contador en un número (suma todos los valores)
 
-// const average = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0); El cero es de donde parte el acumulador, normalmente es cero pero puede ser > 0 si e spor un ticket de descuento ó por puntos que te dan en un campo de golf, etc
+// const average = scores.reduce((accumulator, currentValue) => accumulator + currentValue, 0); El cero es de donde parte el acumulador, normalmente es cero pero puede ser > 0 si es por un ticket de descuento ó por puntos que te dan en un campo de golf, etc
 
 const nums = [20, 23, 45, 68, 76, 2000, 6]
 const total = nums.reduce((acumulador, num) => acumulador + num, 0)

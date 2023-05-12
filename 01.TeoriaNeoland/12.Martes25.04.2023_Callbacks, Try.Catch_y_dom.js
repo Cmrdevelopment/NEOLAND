@@ -35,7 +35,7 @@
 // Es la memoria del navegador, cache de TU NAVEGADOR, lo memoriza en tu pc ó portatil. Lo que hay que saber son los dos metodos que están en el repositorio de localStorage (y hay dos metodos más: clear (para borrarlo todo), remove (para borrar solo una caja).
 
 // Sirve para:
-// --->> Tener una varable que almacene un modo claro o oscuro y así respete su tema.
+// --->> Tener una varable que almacena un modo claro o oscuro y así respete su tema.
 // --->> Sirve tambien para que te mantenga la sesión iniciada de un usuario
 // --->> Sirve para mantener una Array, ejemplo un buscador para no tenerla que hacer todo el rato
 
