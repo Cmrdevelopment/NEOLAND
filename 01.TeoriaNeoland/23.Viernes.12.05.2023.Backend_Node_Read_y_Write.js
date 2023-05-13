@@ -62,21 +62,42 @@
 // Cuando hacemos un XML lo validamos con una web para confirmar que está correcto: https://www.xmlvalidation.com/
 // También lo podemos hacer con el XMLValidator que es uno de los tres metodos pero es más ágil con la web
 
-//? 3.- --------------> CCV
+//? 3.- --------------> CSV
 
-// npm i csv parser => Transforma csv a json
+// Es la forma que comparte el excel los archivos
+
+//! ----> IMPORTANTE QUE NO HAYA LINEAS EN BLANCO EN EL CSV SINO GENERA PROBLEMAS
+
+// Libreria que se debe instalar en el proyecto de CSV: npm i csv-parser => Transforma csv a json
+
+// Mirar el readme
 
 //? 4.- Inquirer
 
 // npm i inquirer
 
-// Si se importa la libreria con import se hace algo diferetne, lo hace así en esta ocasión para que lo veamos ("type": "modules")
+//TODO--->> Si se importa la libreria con import se hace así: Se pone en package.json debajo de "main" ==>  ("type": "module",)
+
+//TODO--->> y en "scripts": {
+//TODO--->>    "start": "node inquirer.js"
+//TODO--->> }
+
+//-----> VAMOS A HACER UN CUSTON-PACKAGE-JSON  como hacer vite cuando nos pregunta sobre que proyecto queremos
+// Es como si estuvieramos haciendo un proyecto de react con Vite
+// -------> UTILIZAMOS INQUIRE PARA HACER LAS PREGUNTAS AL USUARIO POR LA CONSOLA > vamos a preguntar al usuario por el nombre del proyecto y si quiere instalar unas librerias en concreto
+// Hacemos un prompt que son las preguntas que necesitamos que se contesten
 
 //? 5.- CorrectTEXT
 
 // Vamos a corregir un texto que tiene números
 
-// data.match(/D/g) (digitos globales) generador de expresiones regulares, son expresiones para hacer cosas, hay páginas que lo hacen
+// data.match(/\D/g) (digitos globales) generador de expresiones regulares, son expresiones para hacer cosas, hay páginas que lo hacen
+
+///El carácter \D representa cualquier carácter que no sea un dígito.
+/// La /g en la expresión regular significa que la búsqueda debe ser global, es decir, buscar en todo el texto en lugar de solo la primera coincidencia.
+/// paginas para aprender expresiones regulares
+// ------> https://regex101.com/
+// ------> https://regexr.com/
 
 //? 6.- Web scrapping
 
@@ -90,16 +111,12 @@
 // import inquirer from "inquirer";
 // import puppeteer from "puppeteer";
 
-// En package.json poner "type": "module", y 
+// En package.json poner "type": "module", y
 // "scripts": {
-//    "start": "node index.js"}, ==> Se pone debajo de "Depurar" 
+//    "start": "node index.js"}, ==> Se pone debajo de "Depurar"
 
 //! Se quitan las llaves para no poner return
 
 // npm run start es para lanzanrlo en al consola
 
 //? Ejercicios: Hacer un Web scrapping
-
-
-
-

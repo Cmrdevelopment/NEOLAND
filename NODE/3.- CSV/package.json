@@ -1,0 +1,19 @@
+{
+  "name": "3.--csv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "read": "node read.js",
+    "write": "node write.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^6.3.0",
+    "csv-parse": "^5.3.10",
+    "csv-parser": "^3.0.0",
+    "parser": "^0.1.4"
+  }
+}
