@@ -3,6 +3,8 @@
 // TODO ---> BACKEND
 // TODO ->NODE.JS
 
+//? Aquí tenemos ejemplos de todo: https://github.com/NaturalIntelligence/fast-xml-parser/blob/97713ad3ec709f4612118120ce3fde310eed60ec/docs/v4/3.XMLBuilder.md
+
 //! JSON // XML // CCV(excel) estás son las tres formas de recibir y enviar los base de datos
 
 // Es un entorno de desarrollo
@@ -20,6 +22,7 @@
 //-----> npm run read para ejecutar el read
 //-----> npm run write para ejecutar el write
 
+//?--------------> Read And Write
 //?--------------> Read
 // Node tiene una libreria que se llama fs y esta libreria leee y escribe texto plano
 // Metodo readFile
@@ -30,26 +33,35 @@
 //Para hacer modificacione smasivas de objetos
 // Write lo cojo y lo vuelvo a escribir tantas veces como desee hacer cambios
 
-//--------------> XML(importante)
+//? 2.- --------------> XML(importante)
+// nmp init -y para crear un proyecto de node
+
 //! Libreria que lee y escribe archivos es fs => "LO PREGUNTA MUCHO"
 
 // Hay que instalar una libreria => npm i fast-xml-parser
-// Tres metodos
-// XML Parser, XMLBuilder, XMLValidator => nos permite validar
+//?--->> Tres metodos
+// XML Parser, XMLBuilder, XMLValidator => nos permite validar los diferentes elementos en nuestro Backend para que cumpla la sintaxis correcta que tiene XML y lo requerimos de la libraria npm i fast-xml-parser
 
-//? 3.- El objetivo es leer y escribir y pasaro a texto plano
+// El objetivo es leer y escribir y pasarlo a texto plano (fs)
 
-// Instanciar es igual a hacer un new (es hacer un nuevo objeto)
+//TODO --->> Instanciar es igual a hacer un new (es hacer un nuevo objeto)
 
-// Si queremos llamar a los datos tengo en read XML que llamar dentro a otra función debo poner otra función dentro
-
-// Es iterables si penemos llaves
+//? ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO --->> LLamada de ficheros: Si queremos llamar a los datos debemos llamar a una función dentro, si quiero utilizar los datos de escritura o lectura tengo que llamar a otra función que se encarge de tratarlos
+//? //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // no se puede variables globales, es decir, que se ponen dentro de la función y nunca fuera
 
-//! Grapeador: Elemento que está por encima de otros elementos, es el PADRE
+//! Los OBJETOS no SON ITERABLES
 
-//--------------> CCS
+// Es iterables si ponemos llaves {} y no es iterable si ponemso corchetes []
+
+//! Grapeador: Elemento que está por encima de otros elementos, es el PADRE, es decir, da error si no tiene elemento padre
+
+// Cuando hacemos un XML lo validamos con una web para confirmar que está corrceto: https://www.xmlvalidation.com/
+// También lo podemos hacer con el XMLValidator que es uno de los tres metodos pero es más ágil con la web
+
+//? 3.- --------------> CCV
 
 // npm i csv parser => Transforma csv a josn
 
