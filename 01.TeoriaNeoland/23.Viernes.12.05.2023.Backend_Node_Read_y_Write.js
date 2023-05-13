@@ -3,34 +3,35 @@
 // TODO ---> BACKEND
 // TODO ->NODE.JS
 
-//? Aquí tenemos ejemplos de todo: https://github.com/NaturalIntelligence/fast-xml-parser/blob/97713ad3ec709f4612118120ce3fde310eed60ec/docs/v4/3.XMLBuilder.md
+//? Aquí tenemos ejemplos de los métodos de escritura y lectura: https://github.com/NaturalIntelligence/fast-xml-parser/blob/97713ad3ec709f4612118120ce3fde310eed60ec/docs/v4/1.GettingStarted.md
 
-//! JSON // XML // CCV(excel) estás son las tres formas de recibir y enviar los base de datos
+//* JSON // XML // CCV(excel) estás son las tres formas de recibir y enviar los base de datos
 
 // Es un entorno de desarrollo
 
 //! Para abrir un proyecto de node => npm init -y ==> Estamos inicializando un package.json
 
-// Un package.json son los diferentes archivos que se ejecutan dentro dentro de él, Los script son los que se ejecutan con un npm run
+// Un package.json son los diferentes archivos que se ejecutan dentro dentro de él y los script son los que se ejecutan con un npm run
 
 //? Escritura / Lectura de ficheros y Web scrapping
 
 // Dentro de la carpeta se hacen dos archivos: Uno de Escritura y otro de Lectura de ficheros
-// (package.json) Los scrpts son los npm run
+// (package.json) Los scripts son los npm run
 
-// Se ejecuta un scrip con npm run write ó con npm run read en package.json
+// Se ejecuta un scrip con npm run write ó con npm run read o según el nombre que le pongas en el sripts dentro de package.json
+
 //-----> npm run read para ejecutar el read
 //-----> npm run write para ejecutar el write
 
 //?--------------> Read And Write
 //?--------------> Read
-// Node tiene una libreria que se llama fs y esta libreria leee y escribe texto plano
-// Metodo readFile
+// Node tiene una libreria que se llama fs y esta libreria lee y escribe texto plano
+// Metodo readFile o writeFile según sea el de lectura o el de escritura
 
 //TODO ---> JSON.parse(movie) => para pasarlo a texto plano o legible
 
 //?--------------> Write
-//Para hacer modificacione smasivas de objetos
+//Para hacer modificaciones masivas de objetos
 // Write lo cojo y lo vuelvo a escribir tantas veces como desee hacer cambios
 
 //? 2.- --------------> XML(importante)
@@ -58,12 +59,12 @@
 
 //! Grapeador: Elemento que está por encima de otros elementos, es el PADRE, es decir, da error si no tiene elemento padre
 
-// Cuando hacemos un XML lo validamos con una web para confirmar que está corrceto: https://www.xmlvalidation.com/
+// Cuando hacemos un XML lo validamos con una web para confirmar que está correcto: https://www.xmlvalidation.com/
 // También lo podemos hacer con el XMLValidator que es uno de los tres metodos pero es más ágil con la web
 
 //? 3.- --------------> CCV
 
-// npm i csv parser => Transforma csv a josn
+// npm i csv parser => Transforma csv a json
 
 //? 4.- Inquirer
 
