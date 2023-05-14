@@ -102,8 +102,8 @@
 //? 6.- Web scrapping
 
 // Se hace con la tecnologia escroniom, se utiliza una libreria puppeteer
-// Un brousser es crear un navegador
-// npm init -y
+
+// Comenzar un proycto de node: npm init -y
 // Instalamos la libreria npm i inquirer
 // Instalamos la libreria npm i puppeteer
 
@@ -115,8 +115,15 @@
 // "scripts": {
 //    "start": "node index.js"}, ==> Se pone debajo de "Depurar"
 
+// Un brousser es crear un navegador y hya que maximizarlo
+/* const browser = await puppeteer.launch({
+    headless: false,
+    defaultViewport: null,
+    args: ["--start-maximized"],
+}); /*
+
 //! Se quitan las llaves para no poner return
 
-// npm run start es para lanzanrlo en al consola
+// npm run start es para lanzanrlo en al consola. Se pone start porque es el nombre que hemos puesto en package.json en "scripts"
 
 //? Ejercicios: Hacer un Web scrapping
