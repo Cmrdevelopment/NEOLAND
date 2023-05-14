@@ -126,4 +126,15 @@
 
 // npm run start es para lanzanrlo en al consola. Se pone start porque es el nombre que hemos puesto en package.json en "scripts"
 
+ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
+  const items = await page.$$eval("div.search-item", (nodes) =>
+    nodes.map((n) => ({
+      title: n.querySelector(".a cm-txt")?.innerText, // Optional chaining es la ? y dice que si no tienes lo que pido disponible no me rompas la ejecución
+      image: n.querySelector(".img-responsive")?.src,
+      price: n.querySelector("div.buy--price")?.innerText,
+      type: n.querySelector("span.cm-txt")?.innerText,
+    }))
+  );
+
 //? Ejercicios: Hacer un Web scrapping
