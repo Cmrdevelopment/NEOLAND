@@ -45,7 +45,7 @@
 
 // El objetivo es leer y escribir y pasarlo a texto plano (fs)
 
-//TODO --->> Instanciar es igual a hacer un new (es hacer un nuevo objeto)
+//TODO --->> Instanciar es igual a hacer un new (es hacer un nuevo objeto) y va en empieza en mayusculas
 
 //? ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //TODO --->> LLamada de ficheros: Si queremos llamar a los datos debemos llamar a una función dentro, si quiero utilizar los datos de escritura o lectura tengo que llamar a otra función que se encarge de tratarlos
@@ -120,13 +120,14 @@
     headless: false,
     defaultViewport: null,
     args: ["--start-maximized"],
-}); /*
+}); 
+} /*
 
-//! Se quitan las llaves para no poner return
+! Se quitan las llaves para no poner return
 
-// npm run start es para lanzanrlo en al consola. Se pone start porque es el nombre que hemos puesto en package.json en "scripts"
+npm run start es para lanzanrlo en al consola. Se pone start porque es el nombre que hemos puesto en package.json en "scripts"
 
- https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
   const items = await page.$$eval("div.search-item", (nodes) =>
     nodes.map((n) => ({
@@ -136,5 +137,11 @@
       type: n.querySelector("span.cm-txt")?.innerText,
     }))
   );
+} */
 
 //? Ejercicios: Hacer un Web scrapping
+
+//? ///////////////////////////////////////////////////////////////////
+//TODO --->> si hay paginación en la web como se pone para pasar a la siguiente página? ejemplo Amazon
+//TODO --->> si hay categorias como se entra en una? por ejemplo en Leroy Merlin
+//? ///////////////////////////////////////////////////////////////////
