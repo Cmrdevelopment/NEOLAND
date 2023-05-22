@@ -27,7 +27,7 @@
 
 // El populate (es de mongoose) te trae el objeto y te muestra todo el objeto del relacionado. No se ve en MongoDB y si en imsomnia
 // Solo funciona con datos type y ...
-// Desde el punto de vista de Mongodb Character y Movies son dos colecciones de datos peor de esta forma se relacionan
+// Desde el punto de vista de Mongodb Character y Movies son dos colecciones de datos pero de esta forma se relacionan
 // Gracias a mongoosse MongoDB se parece mucho a SQL ya que relacionan los datos
 
 //? Inconsitencia de datos

@@ -82,7 +82,7 @@
 //TODO--->>    "start": "node inquirer.js"
 //TODO--->> }
 
-//-----> VAMOS A HACER UN CUSTON-PACKAGE-JSON  como hacer vite cuando nos pregunta sobre que proyecto queremos
+//-----> VAMOS A HACER UN CUSTOM-PACKAGE-JSON  como hacer vite cuando nos pregunta sobre que proyecto queremos
 // Es como si estuvieramos haciendo un proyecto de react con Vite
 // -------> UTILIZAMOS INQUIRE PARA HACER LAS PREGUNTAS AL USUARIO POR LA CONSOLA > vamos a preguntar al usuario por el nombre del proyecto y si quiere instalar unas librerias en concreto
 // Hacemos un prompt que son las preguntas que necesitamos que se contesten
@@ -145,3 +145,8 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Optiona
 //TODO --->> si hay paginación en la web como se pone para pasar a la siguiente página? ejemplo Amazon
 //TODO --->> si hay categorias como se entra en una? por ejemplo en Leroy Merlin
 //? ///////////////////////////////////////////////////////////////////
+
+// request = req = Es lo que recibe el servidor de lo que ponen en los dispositivos de los usuarios (Movil, tablet, pc ó portatil)
+// response = res = La respuesta del servidor a los clientes (Movil, Tablet, pc o portatil)
+
+// Puerto: Es un proceso que el computador toma para poder ejecutar el servidor mientras hace otras cosas
