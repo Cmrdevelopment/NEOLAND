@@ -21,13 +21,24 @@
 
 // Funciona con funciones a traves de Hooks (Gancho) que son las herramientas (USE). Se basa en Hook, en ganchos.
 
-//? npm create vite@...
+//? npm create vite@latest
 //? Le ponemos el nombre
+//? Eliges React
 //? javascrip-SWC es la alternativa de Babbel
 // npm i
 // para correr el proyecto de desarrollo es npm run dev
-// App borramos el estdo y el template
-// App.js lo convertimos en arrow
+// App.js es donde tenemos nuestra aplicación
+// useState es un estado
+// Lo que está en el return lo devuleve, eso es el templete que incluye <> </>. Estos simbolos <> </> son las backstreet
+//TODO Esto no es un .js sino un .jsx ya que tenemos por un lado la lógica y por otro el html y dentro de html podemos meter cosas de JS
+//? {reactLogo} => esto es que estamos metiendo variables dentro, es como el ${} que haciamos en js
+//! Para meter código de JS en el retunr hay que abrir y cerrar llaves
+// La función set setea valores
+//? Los estados son chivatos y produce un aviso de que se vuelve a rendedizar, es decir, un refresh, un rendenderin
+//? REACT es asincrono, es decir, nosotros podremos cambiar el codigo pero no se verá el cambio reflejado ya que es el motor de REACT quien realiza la acción
+//? Tendré acceso a codigo de JS, es decir, al estado real dentro del return
+//? Las funciones que se pongan fuera del return se ejcutaran por parte de REACT cuando lo necesita
+// El estado es inmutable y nunca modificaremos un objeto
 // App.css se borran
 // Index
 //! Seguir el VIDEO de clase
@@ -35,23 +46,18 @@
 
 // En html no se toca nada y solo se pone los link
 
-// En App es deonde tenemos nuestra aplicación
-
 // En html podemos meter en llaves {} JS directamte
-// Los estados son chivatos y produce un aviso de que se vuelve a rendedizar
 
-//! Instalar las extensiones del principio de curso
-
-// Que es una PROPS?
-
-//! Para meter código de JS en el retunr hay que ahbrir y cerrar llaves
+//? Que es una PROPS?
+// delegar lo que un componente va a renderizar a otro componente, es decir, pasar información de un componente padre a un componente hijo
 
 // ReactJS es un estado inmutable ya que no modificaremos un objeteto
 
 // Comunicación bidereccional
-// Lo natural es cambiar el estado del padre al hijo pero tmabien se puede cambiar un estado de un hijo de un padre
+// Lo natural es cambiar el estado del padre al hijo pero tambien se puede cambiar un estado de un hijo de un padre
 //! En ReactJS el return SOLO puede tener un padre
 // Un fragment en ReactJS es <> y no aparece en el html y no aparece ahí y no fastidia cuando haga el css
+//--->> esta etiqueta vacia <> es un fragment esto es porque siempre en el return necesitamos un elemento padre
 //! El efecto principal de un cambio de estado es hacer un refress, es decir, un redendizado.
 // Que elemento controla el usuario: Los botones
 //--->> Prevee los errores ReactJS. El Strict Mode es un doble render y solo lo hace dos rendent en desarrollo
@@ -65,3 +71,11 @@
 
 //? public es para desplegar
 //? asset es para desarrollo
+
+//TODO Pasos para crear un proecto de REACT
+// npm create vite@latest
+// Pones nombre en minuscula
+// Eliges React
+// Eliges JavaScript + SWC => SWC es la alternativa de babel
+
+// Te dirá que instales: cd PrimerProyecto, npm install y npm run dev
