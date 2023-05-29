@@ -49,6 +49,7 @@
 // En html podemos meter en llaves {} JS directamte
 
 //? Que es una PROPS?
+
 // delegar lo que un componente va a renderizar a otro componente, es decir, pasar información de un componente padre a un componente hijo
 
 // ReactJS es un estado inmutable ya que no modificaremos un objeteto
@@ -79,3 +80,25 @@
 // Eliges JavaScript + SWC => SWC es la alternativa de babel
 
 // Te dirá que instales: cd PrimerProyecto, npm install y npm run dev
+
+// npm create vite@latest //Creamos un proyecto con Vite
+//Indicamos el nombre del proyecto
+//Elegimos react y javascript
+//Seguimos las instrucciones para instalar las dependencias y arrancar el proyecto
+//https://www.notion.so/neoland-school/Toma-de-contacto-ReactJS-3bea71ea90c64abd8dfebef542eefd59
+
+//https://www.npmjs.com/
+
+//! Un COMPONENTE es un elemento reutilizable
+// Componente de tio clase
+//TODO componente de tipo funcional (funciones) => son las más rápidas y agiles
+// Cada mención que haya en el html es una nueva instancia, por lo tanto un nuevo contructor, etc
+// Clases y componentes con mayuscula
+// Las funciones son funciones y los constructores de tipo clase tiene dos partes ()
+// Las props es información que van a recibir y tambien state que es un dato con un valor privado, información que tiene el componente que puede modificarse y cuando se mofifique cambia la vista.
+
+//? Breve introducción a usestate
+// const {variable, método para actualizarla} = useState{valor inicial)
+// const {age, setage} = useState {29}
+
+// logica y datos en componentes y son de
