@@ -76,7 +76,7 @@
 // helpers so ayuda a controlar los errores
 // ----->> handle.error.js
 
-// El .env seria:
+// El .env seria este de abajo pero debemos cambiarlo en cada proyecto
 
 // PORT=8080
 // MONGO_URI=mongodb+srv://cmrbolsadev:.........................................mongodb.net/AQUÍ?retryWrites=true&w=majority

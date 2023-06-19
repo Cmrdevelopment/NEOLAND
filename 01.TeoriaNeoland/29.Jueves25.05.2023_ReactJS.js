@@ -7,7 +7,7 @@
 // ¿Que es mejor? Angular ó ReactJS
 // Depende pero Angular es de google y tira mucho pero ReacJS es más agil y rapida
 
-// declarativas significa que no sabemos lo que ahce detrás, el desarrollador no sabe lo que hace detrás
+// declarativas significa que no sabemos lo que hace detrás, el desarrollador no sabe lo que hace detrás
 // Nosotros le damos ordenes y es el virtual DOM quien se encarga de hacer las cosas
 // Imperativo es que nosotros hacemos las cosas y lo mandamos, ejemlplo con: document.query.selector ==> esto es imperativo.
 // Basado en componentes
@@ -82,15 +82,17 @@
 // Te dirá que instales: cd PrimerProyecto, npm install y npm run dev
 
 // npm create vite@latest //Creamos un proyecto con Vite
-//Indicamos el nombre del proyecto
-//Elegimos react y javascript
-//Seguimos las instrucciones para instalar las dependencias y arrancar el proyecto
+// Indicamos el nombre del proyecto
+// Elegimos react y javascript
+// Seguimos las instrucciones para instalar las dependencias y arrancar el proyecto
+// npm install react-router-dom@6
+
 //https://www.notion.so/neoland-school/Toma-de-contacto-ReactJS-3bea71ea90c64abd8dfebef542eefd59
 
 //https://www.npmjs.com/
 
 //! Un COMPONENTE es un elemento reutilizable
-// Componente de tio clase
+// Componente de tipo clase
 //TODO componente de tipo funcional (funciones) => son las más rápidas y agiles
 // Cada mención que haya en el html es una nueva instancia, por lo tanto un nuevo contructor, etc
 // Clases y componentes con mayuscula
@@ -98,7 +100,24 @@
 // Las props es información que van a recibir y tambien state que es un dato con un valor privado, información que tiene el componente que puede modificarse y cuando se mofifique cambia la vista.
 
 //? Breve introducción a usestate
-// const {variable, método para actualizarla} = useState{valor inicial)
+// const {variable, método para actualizarla} = useState{valor inicial) ó
+// const {nombrevariable, función para cambiar} = useState{valor inicial)
 // const {age, setage} = useState {29}
 
 // logica y datos en componentes y son de
+
+//! Los objetos en React deben ir con las iniciales en MAYUSCULAS
+
+//TODO el useState es para crear un estado y el set es para modificarlo
+
+//TODO const App = () => {
+//--------> nombre variable, función a cambiar = valor inicial
+//--------> El useState crea un estado cuyo valor inicial es el characterlist y lo cambia en setcharacterList
+//TODO     const [characterList, setCharacterList] = React.useState(charactersMock);
+//--------> llamada al servicio para llamar a la api
+//--------> El useEffect se utilza para llamar y/o modificar a cualquier dato o servicio externo
+//TODO     React.useEffect(() => {
+//TODO       getAllCharacters().then((characters) => setCharacterList(characters));
+//TODO     }, []);
+
+// El set es un metodo que me actualiza contenido y lo almacena en la variable
